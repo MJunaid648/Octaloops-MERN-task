@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "JK";
+  src: url("../public/fonts/JKAbode-Demo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANsansx";
+  src: url("../public/fonts/IRANsansx.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: IRANsansx;
+}
+.App {
+  text-align: center;
+}
+h1 {
+  font-family: Volkhov;
+  font-size: 96px;
+  font-weight: 400;
+  /* line-height: 124px; */
+}
+h2 {
+  font-family: Volkhov;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 83px;
+}
+h3 {
+  font-family: Volkhov;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62px;
+}
+p {
+  font-family: IRANSansX;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
