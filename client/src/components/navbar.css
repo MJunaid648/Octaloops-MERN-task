@@ -1,0 +1,144 @@
+.navigation {
+  width: 100%;
+  position: relative;
+  background-color: #2b54ff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.active {
+  border-bottom: 1px solid #fff;
+}
+nav li,
+.logo a {
+  border-bottom: 1px solid transparent;
+}
+nav ul li:hover {
+  border-bottom: 1px solid #fff;
+}
+nav ul li:nth-child(4):hover,
+nav ul li:nth-child(5):hover {
+  border-bottom: 1px solid transparent;
+}
+.logo a {
+  font-family: Jomhuria;
+  font-size: 36px;
+  font-weight: 600;
+}
+li button {
+  border-radius: 50px;
+  border: none;
+}
+.btn {
+  border: 2px solid #fff;
+  font-size: 18px;
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+}
+.create-btn {
+  background: transparent;
+  padding: 7px 18px;
+}
+.login-btn {
+  padding: 7px 36px;
+  background: #fff;
+  color: #2b54ff;
+}
+
+.hamberger {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  display: none;
+  background-color: transparent;
+  position: fixed;
+  right: 2rem;
+  top: 1.6rem;
+  z-index: 100;
+}
+/* MOBNAV STYLE */
+.mobnav {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #2b54ff;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 55;
+  right: 0;
+  top: 0;
+  width: 100vw !important;
+  height: 100vh;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+}
+.drawerClosed {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(250px);
+  transition: opacity 250ms ease-in-out, visibility 250ms linear,
+    transform 250ms ease-in-out;
+}
+.drawerOpen {
+  transform: translateX(0px);
+  transition: transform 250ms ease-in-out;
+  z-index: 60;
+}
+.mobnav .contact-us {
+  padding: 1.6rem 8rem;
+}
+.mobnav .logo {
+  align-self: flex-start;
+}
+.mobnav hr {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.mobnav ul {
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+@media only screen and (max-width: 979px) and (min-width: 769px) {
+  .mobnav {
+    display: none;
+  }
+  nav ul {
+    gap: 1.5rem;
+  }
+  nav a {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hamberger {
+    display: block;
+  }
+  .navigation nav:first-child ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}

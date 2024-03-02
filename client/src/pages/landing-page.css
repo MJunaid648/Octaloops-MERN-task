@@ -1,0 +1,4 @@
+.hero {
+  min-height: 95vh;
+  background-image: url("../images//hero-bg.svg");
+}
