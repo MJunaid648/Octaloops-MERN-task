@@ -126,6 +126,9 @@ li button {
   }
 }
 @media only screen and (max-width: 768px) {
+  nav {
+    padding: 1rem 3rem;
+  }
   .hamberger {
     display: block;
   }

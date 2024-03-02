@@ -1,0 +1,62 @@
+20240215	11:04:20	8fc87517-2d69-4b06-b9ae-fd10af2dd4d2	Error: Not allowed by CORS
+20240215	17:11:17	bae88312-2783-49d5-aa5a-71b85a0f0783	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 6\routes\files\index.html'
+20240215	17:12:27	8d360fb4-7847-4fac-93e7-bd6c7c1af345	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 6\routes\files\index.html'
+20240215	17:13:21	d66f55a9-9826-47ac-b59c-87684392f7eb	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 6\routes\files\index.html'
+20240215	17:13:33	31b046bf-dd08-4c9c-8c0f-166385d44d70	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 6\routes\files\index.html'
+20240215	17:13:34	bfbee230-462b-48f4-b428-365980958527	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 6\routes\files\index.html'
+20240216	10:59:19	b1766778-95ff-4613-8b7d-7359a0f0f122	TypeError: req.json is not a function
+20240216	11:00:32	1ef3d4b3-8bfe-4aea-8b39-bd0ba9a79dcc	TypeError: req.json is not a function
+20240216	11:05:03	36933bf8-3013-49ea-979a-784448779921	ReferenceError: res is not defined
+20240216	12:42:24	4a4b2713-301d-402b-9c44-967fcfea8dc9	ReferenceError: data is not defined
+20240216	13:03:19	6d96d49e-cb59-4c5b-abdf-3c552a2a57dd	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 7 - 2 -  MVC API\files\404.html'
+20240216	13:03:51	db827df5-27f6-4628-b690-8a2cb70f14bb	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 7 - 2 -  MVC API\files\404.html'
+20240216	13:04:03	5c2af9e2-9d74-472d-9534-1ce6727a75bf	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 7 - 2 -  MVC API\files\404.html'
+20240216	13:06:03	5352687b-9f87-4bc3-92d3-37495bf13197	RangeError: Invalid status code: 4
+20240216	13:06:34	bdb3d1f4-cb6b-4be9-8854-36da0f53e7ff	RangeError: Invalid status code: 4
+20240216	13:06:46	95a1c78f-b248-4c3c-986e-b08204f9ed25	RangeError: Invalid status code: 8
+20240216	13:07:48	73d9ec6d-9c98-4546-bcb6-52b3f792d26c	RangeError: Invalid status code: 8
+20240216	13:20:22	0d226ca7-63d2-4f2c-a958-969a2953d926	ReferenceError: newEmployee is not defined
+20240216	13:57:21	1951afd9-d4c2-43ee-b9c4-63744f621777	ReferenceError: newEmployee is not defined
+20240216	14:04:27	e8fc772d-59fb-4f0f-85da-d76cd0e6147d	ReferenceError: newEmployee is not defined
+20240216	14:09:27	682d04c4-6125-40e2-87e6-0cb479af7b60	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 7 - 2 -  MVC API\files\404.html'
+20240216	14:42:23	6b541a3a-5a6b-445e-a9d2-e134ad259494	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 7 - 2 -  MVC API\files\404.html'
+20240217	19:59:39	e32cfa53-a316-4f07-baf4-2ef3d2fd4776	Error: ENOENT: no such file or directory, stat 'F:\dev\MERN stack Specialization\backend\Node.js-full-course\Day 8 - Authentication\files\404.html'
+20240220	14:32:18	f96cb57c-63f9-4471-b0bd-68935d779108	RangeError: Invalid status code: undefined
+20240220	14:32:24	3ff5351a-5211-43a5-b571-88c9eeedc3f0	RangeError: Invalid status code: undefined
+20240302	18:47:56	b1bf30a9-ee48-4012-8323-5408d92d1ebc	Error: ENOENT: no such file or directory, stat 'C:\Users\misrar\Downloads\Day 9 - Authorization\Day 9 - Authorization\views\404.html'
+20240303	01:27:55	b49731b5-041f-416c-a544-3197549593df	Error: Not allowed by CORS
+20240303	01:47:32	adafc27e-05aa-49ca-aa42-d639eea007c1	Error: Not allowed by CORS
+20240303	01:47:38	4b06d5fb-7373-4005-92ba-04f703fa7a51	Error: Not allowed by CORS
+20240303	01:53:38	2d793cf0-52ed-4a44-8feb-bd406a398453	Error: Not allowed by CORS
+20240303	01:54:22	4ac78c3c-afa5-4069-bb18-93bc9df585f8	Error: Not allowed by CORS
+20240303	01:54:23	216bd02e-fdf7-4e34-8f9d-548d3103370e	Error: Not allowed by CORS
+20240303	01:54:23	3b61b3c5-db78-43f5-bff1-2561ac7d3457	Error: Not allowed by CORS
+20240303	01:54:23	5482e0e5-85f9-4d58-9ebb-73b4742ec1ae	Error: Not allowed by CORS
+20240303	01:54:24	5033d6d9-af0b-4455-b3be-f8a748c0cc03	Error: Not allowed by CORS
+20240303	01:54:24	2b072367-563f-4212-8cab-fec96bb39170	Error: Not allowed by CORS
+20240303	01:54:24	1a45e32a-2f45-4466-bc99-6121eebdafda	Error: Not allowed by CORS
+20240303	01:54:24	e182d614-437c-4344-a86e-1075d5ab93cb	Error: Not allowed by CORS
+20240303	01:54:24	71de44e7-b732-4e50-872d-a7616fc26974	Error: Not allowed by CORS
+20240303	01:54:24	68bf6101-0272-4342-bcec-68a583fd4395	Error: Not allowed by CORS
+20240303	01:54:24	9825ce23-302e-4010-ac3f-1966e0d33b23	Error: Not allowed by CORS
+20240303	01:54:25	3eb549dd-3e62-49cd-9ba9-e43554c929aa	Error: Not allowed by CORS
+20240303	01:54:25	d11ebb31-c925-45bd-b187-532ef6a35430	Error: Not allowed by CORS
+20240303	01:56:29	e0758404-666e-408b-8de9-ff356d0337b2	Error: Not allowed by CORS
+20240303	01:56:35	ab86ad35-ee00-4256-bb77-1457a3eafa3a	Error: Not allowed by CORS
+20240303	01:56:53	868bfac6-f3de-4f8f-8364-170e5eb9bf1f	Error: Not allowed by CORS
+20240303	01:57:46	36f279cb-f27b-47cd-b08a-4d41a8ff7eb7	Error: Not allowed by CORS
+20240303	01:59:54	9e55315c-ec85-425e-9d65-d81af6d805bb	Error: Not allowed by CORS
+20240303	02:02:17	37f2c378-5e14-4030-bc33-fcfd83a6051a	Error: Not allowed by CORS
+20240303	02:08:18	9164d5c2-02d8-460d-94f2-46f752d0594b	Error: Not allowed by CORS
+20240303	02:28:04	b0509a74-cdf3-4ce3-8799-6d753994e67f	Error: Not allowed by CORS
+20240303	02:28:08	9b6c46f1-cfa8-48d4-a165-b54257664128	Error: Not allowed by CORS
+20240303	02:28:08	12816936-01ac-4fb6-8cd6-cf01d37f9252	Error: Not allowed by CORS
+20240303	02:28:09	1cdbcf87-8076-4421-a5a7-15d8ccf763d7	Error: Not allowed by CORS
+20240303	02:28:15	9efa8fbd-1f96-4871-8a0a-d5bd1252696d	Error: Not allowed by CORS
+20240303	02:28:15	23a8b04b-bb78-4df6-bf10-c60a013dd370	Error: Not allowed by CORS
+20240303	02:28:16	4acacf65-d288-48ef-a536-cbe8b886f4ea	Error: Not allowed by CORS
+20240303	02:28:16	0d1a514b-852b-4fd0-b5c5-d948a0fef2b5	Error: Not allowed by CORS
+20240303	02:28:16	c0d8975f-fe28-4805-8f1f-7e61d048ed89	Error: Not allowed by CORS
+20240303	02:28:16	b810e1ae-2a2f-4e0b-8e85-4d9bd13e8ff9	Error: Not allowed by CORS
+20240303	02:28:16	6092ffca-aaf7-4296-af34-bdfe7f9a982b	Error: Not allowed by CORS
+20240303	02:28:17	8d0fed4a-7c23-4879-a81d-1f740c92bf75	Error: Not allowed by CORS

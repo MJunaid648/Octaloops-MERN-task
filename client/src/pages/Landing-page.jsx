@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import './landing-page.css'
+import styles from "./landing-page.module.css";
+import Hero from "../components/Hero";
 
 const LandingPage = () => {
   return (
-    <div className="hero">
+    <>
       <Navbar />
-    </div>
+      <Hero />
+    </>
   );
 };
 
