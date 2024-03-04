@@ -29,18 +29,13 @@ const handleLogin = async (req, res) => {
       const refreshToken = jwt.sign(
         { email: foundUser.email },
         process.env.REFRESH_TOKEN_SECRET,
-        { expiresIn: "7d" }
+        { expiresIn: "10s" }
       );
       const currentUser = { ...foundUser.toObject(), refreshToken };
       await User.findByIdAndUpdate(foundUser._id, currentUser);
 
-      res.cookie("jwt", refreshToken, {
-        httpOnly: true,
-        sameSite: "None",
-        maxAge: 24 * 60 * 60 * 1000,
-      });
-
-      res.json({ accessToken });
+      console.log({ accessToken, refreshToken })
+      res.json({ accessToken, refreshToken });
     } else {
       return res.status(401).json({ message: `Incorrect password` });
     }

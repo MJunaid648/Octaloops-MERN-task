@@ -2,8 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const corsOptions = require("./config/corsOptions");
-const path = require("path");
 const logger = require("./middleware/logEvents").logger;
 const errorHandler = require("./middleware/errorHandler");
 const credentials = require("./middleware/credentials");
@@ -22,15 +20,21 @@ async function run() {
 run();
 
 app.use(logger);
-app.use(credentials);
-app.use(cors());
+
+// app.use(credentials);
+
+app.use(cors({ credentials: true, origin: true }));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
-app.use("/login", require("./routes/api/auth.js"));
-app.use("/logout", require("./routes/api/logout.js"));
-app.use("/refresh", require("./routes/api/refresh.js"));
+
 app.use("/register", require("./routes/api/register.js"));
+app.use("/login", require("./routes/api/auth.js"));
+
+// app.use(verifyJWT);
+app.use("/refresh", require("./routes/api/refresh.js"));
+app.use("/logout", require("./routes/api/logout.js"));
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("404")) {

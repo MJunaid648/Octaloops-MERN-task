@@ -1,0 +1,97 @@
+.benefits {
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: #2b54ff;
+  color: #fff;
+  align-items: flex-start;
+  text-align: left;
+
+  background-image: url("../images/benefis 1.svg"),
+    url("../images/benefis 2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(110%) calc(-70%), calc(-18%) calc(198%);
+  background-size: 376.33px 376.33px, 376.33px 376.33px;
+  transform: rotate(-45.18deg) skew(0, 0), rotate(43.16deg) skew(0, 0);
+}
+
+.head h1 {
+  font-family: Volkhov;
+  font-size: 58px;
+  font-weight: 400;
+}
+.head p {
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.bottom div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bottom div img {
+  width: 80px;
+  height: 80px;
+}
+
+.bottom div h3 {
+  font-family: IRANSansX;
+  font-size: 24px;
+  font-weight: 600;
+}
+.bottom div p {
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .head h1 {
+    font-size: 48px;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom div p,
+  .head p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .benefits {
+    padding: 2rem;
+  }
+  .head h1 {
+    font-size: 36px;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom div h3 {
+    font-size: 20px;
+  }
+
+  .bottom div p,
+  .head p {
+    font-size: 16px;
+  }
+  .bottom div {
+    gap: 0.5rem;
+  }
+}

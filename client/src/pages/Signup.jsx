@@ -48,7 +48,7 @@ const Signup = () => {
     if (!validateForm()) {
       return;
     }
-    // console.log(userDetails);
+    console.log(userDetails);
 
     try {
       const response = await axios.post(

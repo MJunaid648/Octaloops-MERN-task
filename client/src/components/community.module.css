@@ -1,0 +1,184 @@
+.communityTop {
+  overflow: hidden;
+  padding: 2rem 5rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.communityTop > div {
+  flex: 1;
+  max-width: 50%;
+}
+.img img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.content h1 {
+  font-family: Volkhov;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 83px;
+}
+.content h1 span {
+  color: #2b54ff;
+}
+.content p {
+  font-family: IRANSansX;
+  font-size: 20px;
+  font-weight: 400;
+}
+.content button {
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 7px 36px;
+  background: #2b54ff;
+  color: #fff;
+}
+
+.cards {
+  padding: 2rem 7rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .profile {
+  display: flex;
+  justify-content: space-between;
+}
+.card .personal {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.card .personal > img.dp {
+  width: 5rem;
+}
+.card .personal p {
+  font-family: IRANSansX;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  text-align: left;
+}
+.card .personal p span {
+  font-family: IRANSansX;
+  font-size: 12px;
+  font-weight: 400;
+}
+.card .personal > img:last-child {
+  width: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card .profile > img {
+  width: 2rem;
+  object-fit: contain;
+}
+
+.card > p {
+  max-width: 85%;
+  font-family: IRANSansX;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.card .hashtags p {
+  font-family: IRANSansX;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.card .postInfo {
+  display: flex;
+  gap: 3rem;
+}
+.card .postInfo span {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.card .postInfo span img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card .postInfo span p {
+  font-family: IRANSansX;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .content h1 {
+    font-size: 48px;
+  }
+  .content p {
+    font-family: IRANSansX;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .communityTop {
+    padding: 2rem;
+  }
+  .communityTop > div {
+    max-width: 100%;
+  }
+  .communityTop .img {
+    display: none;
+  }
+  .content {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .content h1 {
+    font-size: 48px;
+  }
+  .content p {
+    font-family: IRANSansX;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .cards {
+    padding: 2rem;
+  }
+  .card {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .card .personal {
+    gap: 0.5rem;
+  }
+  .card .postInfo {
+    gap: 1.5rem;
+  }
+}

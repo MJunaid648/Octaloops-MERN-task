@@ -9,9 +9,13 @@ const Protected = ({ Component }) => {
     if (!login) {
       navigate("/login");
     }
-  }, [navigate]);
+  });
 
-  return Component;
+  return (
+    <>
+      <Component />
+    </>
+  );
 };
 
 export default Protected;

@@ -14,7 +14,8 @@ const Hero = () => {
       <div className={styles.heroTop}>
         <div className={styles.content}>
           <h1>
-            Learn With <br className={styles.desktop}/> <span>SQL QuizBot</span>
+            Learn With <br className={styles.desktop} />{" "}
+            <span>SQL QuizBot</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -24,7 +25,9 @@ const Hero = () => {
             pretiumull amcorper lectus
           </p>
           <div className={styles.btns}>
-            <Link to='/signup'><button className={styles.btn}>Join Prep Community</button></Link>
+            <Link to="/signup">
+              <button className={styles.btn}>Join Prep Community</button>
+            </Link>
             <button className={styles.btn}>SQL Pads</button>
           </div>
         </div>

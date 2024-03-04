@@ -10,7 +10,6 @@ const Navbar = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
 
-  const [activeSection, setActiveSection] = useState("home");
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleLogout = () => {
@@ -40,19 +39,19 @@ const Navbar = () => {
     <div className={styles.navigation}>
       <nav>
         <div className={styles.logo}>
-          <a href="#">SQL Bot</a>
+          <Link to="#">SQL Bot</Link>
         </div>
         <ul className={styles.links}>
           <li>
-            <a className={styles.active} href="#home">
+            <Link className={styles.active} to="#home">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="$#">SQL Pad</a>
+            <Link to="#">SQL Pad</Link>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <Link to="#">Contact us</Link>
           </li>
           <li>
             <Link to="/signup">
@@ -64,7 +63,7 @@ const Navbar = () => {
           </li>
           <li>
             <button
-              onClick={ handleLogout}
+              onClick={handleLogout}
               className={`${styles["login-btn"]} ${styles.btn}`}
             >
               Logout
@@ -79,18 +78,18 @@ const Navbar = () => {
       </button>
       <nav className={`${styles.mobnav} ${styles.drawerClosed}`}>
         <div className={styles.logo}>
-          <a href="#">SQL Bot</a>
+          <Link to="#">SQL Bot</Link>
         </div>
         <hr />
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="#">Home</Link>
           </li>
           <li>
-            <a href="">SQL Pad</a>
+            <Link to="#">SQL Pad</Link>
           </li>
           <li>
-            <a href="">Contact us</a>
+            <Link to="#">Contact us</Link>
           </li>
           <li>
             <button className={`${styles["create-btn"]} ${styles.btn}`}>
@@ -98,8 +97,8 @@ const Navbar = () => {
             </button>
           </li>
           <li>
-          <button
-              onClick={ handleLogout}
+            <button
+              onClick={handleLogout}
               className={`${styles["login-btn"]} ${styles.btn}`}
             >
               Logout

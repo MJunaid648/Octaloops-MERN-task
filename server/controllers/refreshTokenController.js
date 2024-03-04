@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const User = require("../model/user");
 
 const handlerRefreshToken = async (req, res) => {
   try {
@@ -7,7 +8,11 @@ const handlerRefreshToken = async (req, res) => {
     if (!cookies?.jwt) return res.sendStatus(401);
 
     const refreshToken = cookies.jwt;
+    // console.log("second,", refreshToken);
+
     const foundUser = await User.findOne({ refreshToken });
+
+    // console.log(foundUser);
 
     if (!foundUser) return res.sendStatus(403);
 
@@ -15,14 +20,15 @@ const handlerRefreshToken = async (req, res) => {
       refreshToken,
       process.env.REFRESH_TOKEN_SECRET,
       (err, decode) => {
-        if (err || foundUser.username !== decode.username) {
+        if (err || foundUser.email !== decode.email) {
+          console.log("wrong token");
           return res.sendStatus(403);
         }
 
         const accessToken = jwt.sign(
           { username: decode.username },
           process.env.ACCESS_TOKEN_SECRET,
-          { expiresIn: "30s" }
+          { expiresIn: "12s" }
         );
 
         res.json({ accessToken });
@@ -32,5 +38,7 @@ const handlerRefreshToken = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+module.exports = { handlerRefreshToken };
 
 module.exports = { handlerRefreshToken };

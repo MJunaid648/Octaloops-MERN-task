@@ -1,0 +1,142 @@
+.practice {
+  padding: 2rem 5rem;
+  /* padding-top: 5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: #2b54ff;
+  color: #fff;
+  text-align: center;
+  background-image: url("../images/benefis 1.svg"),
+    url("../images/benefis 2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(105%) calc(-40%), calc(-18%) calc(220%);
+  background-size: 300px 300px, 400px 400px;
+  transform: rotate(-45.18deg) skew(0, 0), rotate(43.16deg) skew(0, 0);
+}
+.head {
+  max-width: 80%;
+  align-self: center;
+}
+.head h1 {
+  font-family: Volkhov;
+  font-size: 48px;
+  font-weight: 400;
+}
+.head p {
+  font-family: IRANSansX;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.bottom .squares {
+  display: flex;
+  gap: 2rem;
+}
+.squares div {
+  flex: 1;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 4rem;
+  display: grid;
+  place-items: center;
+}
+
+.squares div img {
+  width: 80%;
+  aspect-ratio: 1;
+}
+
+.bottom button {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  padding: 7px 30px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .practice {
+    background: #2b54ff;
+    padding: 2rem 5rem;
+  }
+  .head {
+    max-width: 100%;
+    align-self: center;
+  }
+  .head h1 {
+    font-family: Volkhov;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .head p {
+    font-family: IRANSansX;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .bottom .squares {
+    display: flex;
+    gap: 2rem;
+  }
+  .squares div {
+    flex: 1;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .squares div img {
+    width: 80%;
+    aspect-ratio: 1;
+  }
+
+  .bottom button {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    align-self: center;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    padding: 7px 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .practice {
+    background: #2b54ff;
+    padding: 2rem;
+  }
+  .head {
+    max-width: 100%;
+  }
+  .head h1 {
+    font-size: 36px;
+  }
+  .head p {
+    font-size: 18px;
+  }
+
+  .squares div {
+    padding: 3rem;
+  }
+}

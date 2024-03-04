@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./style.module.css";
 import { useAuth } from "../Context/AuthContext";
+import Cookies from "js-cookie";
 
+import api from "../api/api";
 const Login = () => {
   const { login } = useAuth();
   let navigate = useNavigate();
@@ -40,21 +41,32 @@ const Login = () => {
     if (!validateForm()) {
       return;
     }
-
+  
     console.log(loginDetails);
+  
     try {
-      const response = await axios.post(
+      const response = await api.post(
         "http://localhost:5000/login",
-        loginDetails
+        loginDetails,
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
       );
-      console.log(response);
-      if (!response.data.accessToken) {
+  
+      console.log("API response:", response.data);
+  
+      if (!response.data.accessToken || !response.data.refreshToken) {
         throw new Error("Failed to log in");
       }
-
-      // console.log("API response:", response.data);
-
-      login(response.data.accessToken);
+  
+      const refreshToken = response.data.refreshToken;
+  
+      Cookies.set("jwt", refreshToken, { sameSite: "Lax" });
+  
+      console.log("response data");
+      console.log(response.data);
+      login(response.data);
       navigate("/");
     } catch (error) {
       console.error("Error:", error.message);
